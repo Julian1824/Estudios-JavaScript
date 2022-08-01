@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    
+    <style>
+        .box {
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+        
+        .dashed {
+            border: 3px dashed black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<h1>Eventos, Funciones,Dom</h1>
+<!-- 
+        1. Formulario, Nombre, Apellido y Edad
+        2. Boton enviar datos boton sumit
+        3. Mostrar Datos por pantalla
+        4. Validación de formulario
+-->
+<div class="box">
+    <form action="#" id="form" method="post" style="padding-right:35%" onsubmit="return false">
+        <label for="Nombre">Nombre</label>
+        <br>
+        <input type="text" id="Nombre" name="Nombre">
+        <br>
+        <label for="Apellidos">Apellidos</label>
+        <br>
+        <input type="text" id="Apellido" name="Apellido">
+        <br>
+        <label for="edad">Edad</label>
+        <br>
+        <input type="text" id="edad" name="edad">
+        <br>
+        <input type="submit" value="submit" id="submit">
+    </form>
+</div>
+<div class="box dashed">
+    <h1>INFORMACIÓN</h1>
+    <hr>
+    <p id="p_nombre">
+        <span></span>
+    </p>
+    <p id="p_apellido">
+        Apellido:<span></span>
+    </p>
+    <p id="p_edad">
+        Edad:<span></span>
+    </p>
+
+</div>
+<script src="js/32-formulario.js"></script>
+</body>
+
+</html>
